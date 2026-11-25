@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uthram Stores – Neighbourhood grocery, Akkarapuram, Thrissur</title>
+<meta name="description" content="Uthram Stores in Akkarapuram, Thrissur. Daily groceries, fresh milk, vegetables and snacks. Order on WhatsApp. Free delivery within 5 km.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1F4D33;--leaf:#F2F6EC;--gold:#C8961E;--ink:#1B2A21;--red:#B3361F;--white:#fff;--line:#d9e2d3;
+--head:'Bricolage Grotesque','Trebuchet MS',sans-serif;--body:'Source Sans 3','Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font:400 1.05rem/1.6 var(--body);color:var(--ink);background:var(--leaf)}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:800}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:600}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.1rem}
+section{padding:3rem 0}
+.kasavu{height:10px;background:linear-gradient(var(--gold) 0 3px,transparent 3px 7px,var(--gold) 7px 10px)}
+#banner{background:var(--green);color:#fff;text-align:center;padding:.5rem 1rem;font-size:.95rem}
+header{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.6rem;padding-bottom:.6rem}
+.brand{font:800 1.4rem var(--head);color:var(--green);text-decoration:none}
+nav{display:flex;gap:1.1rem;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:600;color:var(--ink)}
+nav a:hover{color:var(--gold)}
+.hero{background:var(--white);padding:3rem 0 2.5rem}
+.hero .wrap{display:grid;gap:2rem;grid-template-columns:1.2fr 1fr;align-items:center}
+.hero p.lead{font-size:1.2rem;max-width:34rem}
+.btns{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+.btn{display:inline-block;border:2px solid var(--green);background:var(--green);color:#fff;padding:.7rem 1.3rem;border-radius:6px;font:600 1rem var(--body);text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:var(--green)}
+.btn.wa{background:#1a7f43;border-color:#1a7f43}
+.board{border:2px solid var(--green);border-radius:10px;padding:1.2rem;background:var(--leaf)}
+.board h2{font-size:1.3rem;margin-bottom:.6rem}
+.status{display:inline-block;padding:.2rem .7rem;border-radius:99px;font-weight:600;color:#fff;background:var(--red)}
+.status.open{background:#1a7f43}
+.board dl{margin:.8rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem}
+.board dt{font-weight:600}.board dd{margin:0}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}
+.tab{border:2px solid var(--green);background:var(--white);color:var(--green);padding:.45rem 1rem;border-radius:99px;font:600 .95rem var(--body);cursor:pointer}
+.tab[aria-selected=true]{background:var(--green);color:#fff}
+.tools{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.tools input[type=search]{flex:1;min-width:200px;padding:.6rem .8rem;border:2px solid var(--line);border-radius:6px;font:inherit}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin-top:1rem}
+.item{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:.9rem;display:flex;flex-direction:column;gap:.35rem}
+.item img,.noimg{width:100%;height:150px;object-fit:cover;border-radius:6px;background:var(--leaf)}
+.noimg{display:flex;align-items:center;justify-content:center;font:800 3rem var(--head);color:var(--gold);border:2px dashed var(--line)}
+.item .ml{color:#4d6455;font-size:.92rem}
+.row{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-top:auto}
+.tag{font-size:.85rem;font-weight:600;padding:.1rem .6rem;border-radius:99px;background:#dff0e3;color:#17612f}
+.tag.out{background:#f8dcd6;color:var(--red)}
+.add{border:2px solid var(--green);background:var(--white);color:var(--green);border-radius:6px;padding:.3rem .8rem;font:600 .9rem var(--body);cursor:pointer}
+.add:disabled{opacity:.4;cursor:not-allowed}
+.packs{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.pack{background:var(--white);border:2px solid var(--gold);border-radius:10px;padding:1.2rem}
+.pack img{width:100%;height:180px;object-fit:cover;border-radius:6px;margin-bottom:.8rem}
+.pack ul{padding-left:1.1rem;margin:.5rem 0 1rem}
+.alt-bg{background:var(--white)}
+.cols{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+iframe{width:100%;height:320px;border:2px solid var(--green);border-radius:10px}
+.list{background:var(--white);border:2px solid var(--green);border-radius:10px;padding:1.2rem;margin-top:1.5rem}
+.list li{display:flex;justify-content:space-between;gap:1rem;padding:.25rem 0;border-bottom:1px dashed var(--line)}
+.list li button{border:0;background:none;color:var(--red);font-weight:600;cursor:pointer}
+.list input,.list textarea{width:100%;padding:.6rem;border:2px solid var(--line);border-radius:6px;font:inherit;margin:.3rem 0}
+.empty{color:#4d6455}
+footer{background:var(--green);color:#fff;padding:1.5rem 0 5rem;font-size:.95rem}
+footer a{color:#fff}
+.fab{position:fixed;right:1rem;bottom:1rem;z-index:30;background:#1a7f43;color:#fff;text-decoration:none;font-weight:600;padding:.8rem 1.2rem;border-radius:99px;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+@media(max-width:760px){.hero .wrap,.cols{grid-template-columns:1fr}nav{gap:.7rem;font-size:.95rem}header .wrap{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="banner">Free delivery within 5 km · Open Monday to Saturday, 9 am to 9 pm · Closed on Sundays</div>
+<header>
+<div class="wrap">
+<a class="brand" href="#home">Uthram Stores</a>
+<nav aria-label="Main">
+<a href="#products">Products</a><a href="#packs">Festive packs</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+</div>
+<div class="kasavu"></div>
+</header>
+
+<main id="home">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Your daily groceries, one lane away.</h1>
+<p class="lead">Rice, milk, vegetables, snacks and household needs from your neighbourhood store in Akkarapuram. Send your list on WhatsApp and we deliver to your door.</p>
+<div class="btns">
+<a class="btn wa" href="https://wa.me/917994773912?text=Hello%20Uthram%20Stores%2C%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+<a class="btn alt" href="#products">Browse products</a>
+</div>
+</div>
+<aside class="board" aria-label="Store information">
+<h2>Store today</h2>
+<span id="status" class="status">Checking…</span>
+<dl>
+<dt>Hours</dt><dd>Mon–Sat, 9 am–9 pm<br>Sunday closed</dd>
+<dt>Delivery</dt><dd>Free within 5 km</dd>
+<dt>Payment</dt><dd>Cash or UPI at your door</dd>
+<dt>Phone</dt><dd><a href="tel:+917994773912">7994773912</a></dd>
+</dl>
+</aside>
+</div></div>
+
+<section id="products"><div class="wrap">
+<h2>Products</h2>
+<p>Tap Add to build your order list, then send it to us on WhatsApp. Availability is updated by the store.</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="tools">
+<input type="search" id="q" placeholder="Search products, e.g. puttu podi" aria-label="Search products">
+<label><input type="checkbox" id="onlyIn"> Show only in stock</label>
+</div>
+<div class="grid" id="grid" aria-live="polite"></div>
+
+<div class="list" id="order">
+<h3>Your order list</h3>
+<ul id="olist" style="list-style:none;padding:0;margin:0"></ul>
+<p id="oempty" class="empty">Nothing added yet. Choose items above, or type your own list below.</p>
+<label for="notes">Extra items or notes</label>
+<textarea id="notes" rows="3" placeholder="Anything else you need, or your delivery landmark"></textarea>
+<label for="cname">Your name</label>
+<input id="cname" autocomplete="name">
+<div class="btns"><button class="btn wa" id="send" type="button">Send list on WhatsApp</button><button class="btn alt" id="clear" type="button">Clear list</button></div>
+</div>
+</div></section>
+
+<section id="packs" class="alt-bg"><div class="wrap">
+<h2>Festive grocery packs</h2>
+<p>Ready kits for Onam and Vishu. Ask the store for this season's contents and price.</p>
+<div class="packs">
+<div class="pack"><img src="images/onam-pack.jpg" alt="Onam grocery pack with rice, salt, spices and pulses" loading="lazy" width="320" height="180"><h3>Onam sadya pack</h3><ul><li>Rice and pulses</li><li>Coconut oil and spices</li><li>Nendran bananas and vegetables</li></ul><a class="btn wa" href="https://wa.me/917994773912?text=Hello%2C%20please%20share%20details%20of%20the%20Onam%20pack." target="_blank" rel="noopener">Ask about this pack</a></div>
+<div class="pack"><img src="images/vishu-pack.jpg" alt="Vishu kani platter with pulses and grains" loading="lazy" width="320" height="180"><h3>Vishu pack</h3><ul><li>Rice, flours and sweets ingredients</li><li>Snacks and beverages</li><li>Fresh produce</li></ul><a class="btn wa" href="https://wa.me/917994773912?text=Hello%2C%20please%20share%20details%20of%20the%20Vishu%20pack." target="_blank" rel="noopener">Ask about this pack</a></div>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap cols">
+<div>
+<h2>About Uthram Stores</h2>
+<p>Uthram Stores is a family-run convenience store at Meghamalhar Complex, Akkarapuram. We stock daily staples, fresh Milma milk and curd, vegetables, Kerala snacks, and household and personal care items.</p>
+<p>This website lets you check opening hours and what is in stock, and send your grocery list without a long phone call.</p>
+</div>
+<div>
+<h3>What we sell</h3>
+<p>Staples and groceries · Dairy, bakery and fresh items · Snacks and beverages · Household and personal care</p>
+<h3>Delivery</h3>
+<p>Free delivery within 5 km of the store, with payment in cash or UPI at your door.</p>
+</div>
+</div></section>
+
+<!-- Testimonials: add real customer quotes (with permission) in this section, then remove "hidden".
+<section id="reviews" class="alt-bg" hidden>...</section> -->
+
+<section id="contact" class="alt-bg"><div class="wrap cols">
+<div>
+<h2>Find us</h2>
+<p><strong>Uthram Stores</strong><br>Meghamalhar Complex, Akkarapuram, Thrissur</p>
+<p>Phone and WhatsApp: <a href="tel:+917994773912">7994773912</a><br>Email: <a href="mailto:Rajesh.Worley@Gmail.com">Rajesh.Worley@Gmail.com</a></p>
+<p>Hours: Monday to Saturday, 9 am to 9 pm. Closed on Sundays.</p>
+<div class="btns"><a class="btn" href="https://maps.app.goo.gl/VXgW8svVBw4rVD5e8" target="_blank" rel="noopener">Open in Google Maps</a></div>
+</div>
+<iframe title="Map of Uthram Stores" loading="lazy" src="https://maps.google.com/maps?q=Meghamalhar%20Complex%2C%20Akkarapuram%2C%20Thrissur&output=embed"></iframe>
+</div></section>
+</main>
+
+<div class="kasavu"></div>
+<footer><div class="wrap">© <span id="yr"></span> Uthram Stores, Akkarapuram, Thrissur. Website built as a student project with the owner’s permission.</div></footer>
+<a class="fab" id="fab" href="https://wa.me/917994773912" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp us</a>
+
+<script>
+/* Edit this list to update the shop. i: photo file name in the images folder (leave empty for no photo); price: number in rupees (or null to show "Ask for price"); inStock: true/false */
+const PRODUCTS=[
+{c:"Staples",n:"Kerala Matta rice",m:"Red rice",i:"kerala-matta-rice",p:null,s:true},
+{c:"Staples",n:"White rice",m:"",i:"white-rice",p:null,s:true},
+{c:"Staples",n:"Puttu podi",m:"Steamed rice cake flour",i:"puttu-podi",p:null,s:true},
+{c:"Staples",n:"Pathiri podi",m:"",i:"pathiri-podi",p:null,s:true},
+{c:"Staples",n:"Wheat flour (atta)",m:"",i:"wheat-flour",p:null,s:true},
+{c:"Staples",n:"Coconut oil",m:"Pure",i:"coconut-oil",p:null,s:true},
+{c:"Staples",n:"Sunflower oil",m:"",i:"sunflower-oil",p:null,s:true},
+{c:"Staples",n:"Spices and masalas",m:"Mustard, fenugreek, dried red chilies, turmeric, curry masalas",i:"spices-masalas",p:null,s:true},
+{c:"Staples",n:"Cherupayar",m:"Green gram",i:"cherupayar",p:null,s:true},
+{c:"Staples",n:"Kadala",m:"Chickpeas",i:"kadala",p:null,s:true},
+{c:"Staples",n:"Toor dal",m:"",i:"toor-dal",p:null,s:true},
+{c:"Staples",n:"Tea and coffee",m:"Tea dust (Kannan Devan, Ripple), instant and filter coffee",i:"tea-coffee",p:null,s:true},
+{c:"Dairy & Fresh",n:"Milma milk",m:"Fresh packets",i:"milma-milk",p:null,s:true},
+{c:"Dairy & Fresh",n:"Curd and buttermilk",m:"Thairu and sambharam",i:"curd-buttermilk",p:null,s:true},
+{c:"Dairy & Fresh",n:"Ghee",m:"",i:"ghee",p:null,s:true},
+{c:"Dairy & Fresh",n:"Bread, buns and rusks",m:"",i:"bread-buns",p:null,s:true},
+{c:"Dairy & Fresh",n:"Eggs",m:"",i:"eggs",p:null,s:true},
+{c:"Dairy & Fresh",n:"Idli/dosa batter",m:"Ready to cook",i:"idli-dosa-batter",p:null,s:true},
+{c:"Dairy & Fresh",n:"Vegetables",m:"Shallots, onions, tomatoes, green chilies, ginger, garlic, curry leaves",i:"vegetables",p:null,s:true},
+{c:"Dairy & Fresh",n:"Coconut",m:"",i:"coconut",p:null,s:true},
+{c:"Dairy & Fresh",n:"Nendran bananas",m:"",i:"nendran-banana",p:null,s:true},
+{c:"Dairy & Fresh",n:"Palayankodan bananas",m:"",i:"palayankodan-banana",p:null,s:true},
+{c:"Snacks & Drinks",n:"Banana chips (upperi)",m:"",i:"banana-chips",p:null,s:true},
+{c:"Snacks & Drinks",n:"Tapioca chips",m:"",i:"tapioca-chips",p:null,s:true},
+{c:"Snacks & Drinks",n:"Achappam, kuzhalappam, murukku",m:"",i:"achappam-murukku",p:null,s:true},
+{c:"Snacks & Drinks",n:"Biscuits",m:"",i:"biscuits",p:null,s:true},
+{c:"Snacks & Drinks",n:"Chocolates and candies",m:"",i:"chocolates-candies",p:null,s:true},
+{c:"Snacks & Drinks",n:"Instant noodles",m:"",i:"instant-noodles",p:null,s:true},
+{c:"Snacks & Drinks",n:"Bottled water",m:"",i:"bottled-water",p:null,s:true},
+{c:"Snacks & Drinks",n:"Sodas",m:"",i:"soft-drinks",p:null,s:true},
+{c:"Snacks & Drinks",n:"Mango drinks and packet juices",m:"",i:"packet-juices",p:null,s:true},
+{c:"Household",n:"Ayurvedic soaps",m:"Chandrika, Medimix",i:"soaps",p:null,s:true},
+{c:"Household",n:"Hair oil and shampoo",m:"Coconut hair oil, shampoo sachets",i:"hair-oil-shampoo",p:null,s:true},
+{c:"Household",n:"Toothpaste",m:"",i:"toothpaste",p:null,s:true},
+{c:"Household",n:"Razors",m:"",i:"razors",p:null,s:true},
+{c:"Household",n:"Detergent, washing soap and dishwash bars",m:"",i:"household-personal-care",p:null,s:true},
+{c:"Household",n:"Broomsticks and cleaning supplies",m:"",i:"cleaning-supplies",p:null,s:true},
+{c:"Household",n:"Mosquito coils and refills",m:"",i:"mosquito-products",p:null,s:true},
+{c:"Household",n:"Matchboxes and candles",m:"",i:"candles-matches",p:null,s:true},
+{c:"Household",n:"Pens and notebooks",m:"",i:"basic-stationery",p:null,s:true}
+];
+const cats=["All",...new Set(PRODUCTS.map(p=>p.c))];
+let cat="All",order={};
+const $=id=>document.getElementById(id);
+function esc(t){return t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function tabs(){$("tabs").innerHTML=cats.map(c=>`<button class="tab" role="tab" aria-selected="${c===cat}" data-c="${esc(c)}">${esc(c)}</button>`).join("")}
+function render(){
+ const q=$("q").value.trim().toLowerCase(),only=$("onlyIn").checked;
+ const list=PRODUCTS.filter(p=>(cat==="All"||p.c===cat)&&(!only||p.s)&&(p.n+" "+p.m).toLowerCase().includes(q));
+ $("grid").innerHTML=list.length?list.map(p=>`<div class="item">${p.i?`<img src="images/${p.i}.jpg" alt="${esc(p.n)}" loading="lazy" width="320" height="200">`:`<div class="noimg" aria-hidden="true">${esc(p.n[0])}</div>`}<h3>${esc(p.n)}</h3>${p.m?`<div class="ml">${esc(p.m)}</div>`:""}<div class="row"><span>${p.p?"₹"+p.p:"Ask for price"}</span><span class="tag ${p.s?"":"out"}">${p.s?"In stock":"Out of stock"}</span></div><button class="add" data-n="${esc(p.n)}" ${p.s?"":"disabled"}>Add to list</button></div>`).join(""):`<p class="empty">No products match. Try another word, or send us your list on WhatsApp.</p>`;
+}
+function olist(){
+ const k=Object.keys(order);
+ $("oempty").hidden=k.length>0;
+ $("olist").innerHTML=k.map(n=>`<li><span>${esc(n)} × ${order[n]}</span><button data-r="${esc(n)}" aria-label="Remove ${esc(n)}">Remove</button></li>`).join("");
+}
+$("tabs").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;tabs();render()}};
+$("q").oninput=render;$("onlyIn").onchange=render;
+$("grid").onclick=e=>{const n=e.target.dataset.n;if(n){order[n]=(order[n]||0)+1;olist()}};
+$("olist").onclick=e=>{const r=e.target.dataset.r;if(r){delete order[r];olist()}};
+$("clear").onclick=()=>{order={};olist()};
+$("send").onclick=()=>{
+ const items=Object.keys(order).map(n=>`- ${n} x ${order[n]}`).join("\n"),notes=$("notes").value.trim(),name=$("cname").value.trim();
+ if(!items&&!notes){alert("Add at least one item or type your list in the notes box.");return}
+ const msg=`Hello Uthram Stores, I would like to order:\n${items}${notes?"\n\nNotes: "+notes:""}${name?"\n\nName: "+name:""}`;
+ window.open("https://wa.me/917994773912?text="+encodeURIComponent(msg),"_blank","noopener");
+};
+function status(){
+ const t=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Kolkata",weekday:"short",hour:"numeric",hour12:false}).formatToParts(new Date());
+ const d=t.find(x=>x.type==="weekday").value,h=+t.find(x=>x.type==="hour").value%24;
+ const open=d!=="Sun"&&h>=9&&h<21,el=$("status");
+ el.textContent=open?"Open now":"Closed now";el.className="status"+(open?" open":"");
+}
+$("yr").textContent=new Date().getFullYear();
+tabs();render();olist();status();
+</script>
+</body>
+</html>
